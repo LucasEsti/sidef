@@ -18,10 +18,10 @@ get_header();
                         )); ?>
         
         <div class="row mb-3 validation-cmd">
-            <h2 class="col-lg-5 col-md-6 col-sm-12 p-2" data-aos="fade-right">Validation de votre commande</h2>
+            <h2 class="col-lg-5 col-md-6 col-sm-12 p-2">Validation de votre commande</h2>
         </div>
         
-        <div class="row" data-aos="fade-up">
+        <div class="row">
             <?php echo do_shortcode('[woocommerce_checkout]'); ?>
         </div>
     </div>
