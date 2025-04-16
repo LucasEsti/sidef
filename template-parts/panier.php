@@ -24,7 +24,7 @@ get_header();
             <h2 class="col-lg-5 col-md-6 col-sm-12 p-2" >Votre panier</h2>
         </div>
         
-        <div class="row" data-aos="fade-up">
+        <div class="row">
             <?php echo do_shortcode('[woocommerce_cart]'); ?>
         </div>
     </div>
