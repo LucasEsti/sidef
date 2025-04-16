@@ -317,7 +317,7 @@ get_header(); ?>
             <div class="row d-flex justify-content-center engagements" >
                 <div class="row mb-3 ml-5 mr-5">
                     <div class="center-heading" >
-                        <h2 data-aos="fade-down" class="text-white text-center enga_titre">
+                        <h2 class="text-white text-center enga_titre">
                             <em><?php echo get_sub_field('titre'); ?></em>
                         </h2>
                     </div>
