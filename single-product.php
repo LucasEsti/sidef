@@ -56,7 +56,7 @@ $image = wp_get_attachment_image_src( $thumbnail_id , 'full');
 </div>
 
 <div class="container mt-5 mb-4">
-    <h2 class="text-center" data-aos="fade-up">Produits similaires</h2>
+    <h2 class="text-center" >Produits similaires</h2>
     <div class="row carous-promo owl-carousel owl-theme">
         <?php
             $args = array(

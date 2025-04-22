@@ -101,17 +101,17 @@ $image = wp_get_attachment_image_src( $thumbnail_id , 'full');
             <?php if ($product_cat_id != 54): ?>
             <div class="element-item d-flex align-items-end flex-column col-lg-2 col-md-3 col-6 mb-1 mt-5">
                 <div class="p-2 d-flex align-items-center justify-content-center border w-100 div-promo">
-                    <img class="img-fluid" data-aos="fade-up-right" src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" alt="" />
+                    <img class="img-fluid"  src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" alt="" />
                     <?php if ($product->is_on_sale()): 
                         ?>
-                        <img class="img-fluid img-promo" data-aos="fade-down-right" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/icon_promo.webp" alt="" />
+                        <img class="img-fluid img-promo" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/icon_promo.webp" alt="" />
                     <?php endif; ?>
                 </div>
                 <div class="product-det w-100 d-flex align-items-start flex-column">
-                    <div class="p-2 w-100"><a href="<?php echo get_permalink(); ?>" data-aos="flip-left" class="row mb-1 pl-3 title-produits text-center">
+                    <div class="p-2 w-100"><a href="<?php echo get_permalink(); ?>" class="row mb-1 pl-3 title-produits text-center">
                         <strong><?php echo get_the_title(); ?></strong>
                     </a></div>
-                    <div class="p-2 text-center w-100 reference-produit"><span data-aos="flip-right"><?php echo $product->get_sku(); ?></span></div>
+                    <div class="p-2 text-center w-100 reference-produit"><span ><?php echo $product->get_sku(); ?></span></div>
                     <div class="mt-auto p-2 text-center w-100">
                         <?php if ($product->get_regular_price()): ?>
                             <?php if ($product->get_regular_price() > 1): 
@@ -183,7 +183,7 @@ $image = wp_get_attachment_image_src( $thumbnail_id , 'full');
                     </div>
                     <?php endif; ?>
             <?php endwhile; wp_reset_query();?>
-        <div class="mt-5 text-center" data-aos="flip-left">
+        <div class="mt-5 text-center" >
             <?php wp_pagenavi();?>
         </div>
         <?php endif; ?>

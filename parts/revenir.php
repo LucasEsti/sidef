@@ -23,7 +23,7 @@ if (isset($args['revenir'])) {
     <div class="row mb-3">
         <div class="col-lg-6 col-md-12 col-12 d-flex align-items-center">
             <nav aria-label="breadcrumb" class="container">
-                <ol class="breadcrumb" data-aos="fade-up">
+                <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="revenir-accueil" href="/" ><i class="fa-solid fa-caret-left"></i> Accueil</a></li>
                     
                     <?php
@@ -60,7 +60,7 @@ if (isset($args['revenir'])) {
                 </ol>
             </nav>
         </div>
-        <div class="col-lg-6 col-md-12 col-12" data-aos="fade-right"><?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?></div>
+        <div class="col-lg-6 col-md-12 col-12" ><?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?></div>
     </div>
 </div>
 

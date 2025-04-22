@@ -23,10 +23,10 @@ get_header(); ?>
         $loop = new WP_Query( $args );
         if( $loop->have_posts() ) : ?>
     <div class="container text-center mb-5">
-        <h3 class="" data-aos="fade-down" >
+        <h3 class="" >
             Profitez de nos articles en <br>
         </h3>
-        <h3 class="animate__animated animate__pulse animate__delay-1s animate__faster animate__infinite" data-aos="fade-down" >
+        <h3 class="animate__animated animate__pulse animate__delay-1s animate__faster animate__infinite" >
             <span class="promo">PROMOTION</span>
         </h3>
         <div class="row carous-promo owl-carousel owl-theme">
@@ -101,21 +101,21 @@ get_header(); ?>
         <div class="container">
             <div class="row pl-2">
                 <div class="d-flex align-items-center col-lg-4 col-md-4 col-12 mb-2">
-                    <img src="<?php echo get_sub_field('icon')['url']; ?>" data-aos="zoom-in" class="rounded img-fluid d-block mx-auto" alt="<?php echo get_sub_field('icon')['alt']; ?>">
+                    <img src="<?php echo get_sub_field('icon')['url']; ?>" class="rounded img-fluid d-block mx-auto" alt="<?php echo get_sub_field('icon')['alt']; ?>">
                 </div>
                 <div class="container col-lg-8 col-md-8 col-12">
                     <div class="row mb-1 pl-4 w-100">
-                        <h2 class="titre_categorie" data-aos="zoom-in-up"><?php echo get_sub_field('titre_categorie'); ?></h2>
+                        <h2 class="titre_categorie"><?php echo get_sub_field('titre_categorie'); ?></h2>
                     </div>
                     <div class="row d-flex justify-content-center">
                         <?php foreach(get_sub_field('categorie_repeteur') as $categorie_repeteur): ?>
                         <div class="col-lg-4 col-md-6 col-6 mb-3">
                             <a href="<?php echo get_term_link( $categorie_repeteur['lien'][0], 'product_cat' ); ?>" class="h-100 cat-list d-flex align-items-center flex-column  p-3 border">
                             <div class="p-2 d-flex align-items-center justify-content-center cat-img">
-                                <img class="img-fluid w-50" data-aos="<?php echo $categorie_repeteur['aos']; ?>" src="<?php echo $categorie_repeteur['icon']["url"]; ?>" alt="<?php echo $categorie_repeteur['icon']["alt"]; ?>">
+                                <img class="img-fluid w-50" src="<?php echo $categorie_repeteur['icon']["url"]; ?>" alt="<?php echo $categorie_repeteur['icon']["alt"]; ?>">
                             </div>
                             <div class="mt-auto text-center">
-                                <h4 data-aos="zoom-in-down"><?php echo $categorie_repeteur['titre']; ?></h4>
+                                <h4 ><?php echo $categorie_repeteur['titre']; ?></h4>
                             </div>
                         </a>
                         </div>
@@ -135,7 +135,7 @@ get_header(); ?>
     
     if (get_sub_field('type')): ?>
     <div class="container mb-3 mt-3">
-        <div class="row carous-livraison owl-carousel owl-theme" data-aos="fade-down">
+        <div class="row carous-livraison owl-carousel owl-theme" >
             <?php foreach(get_sub_field('type') as $type): ?>
             <div class="item d-flex align-items-center justify-content-center">
                 <div class="row">
@@ -157,7 +157,7 @@ get_header(); ?>
 
     <div class="container mb-3">
         <div class="row ">
-            <h3 class="text-center" data-aos="fade-down">Nos <span class="selection">sélections</span> de produits</h3>
+            <h3 class="text-center" >Nos <span class="selection">sélections</span> de produits</h3>
         </div>
         <div class="row">
             <?php
@@ -181,10 +181,10 @@ get_header(); ?>
             
             <div class="element-item d-flex align-items-end flex-column col-lg-2 col-md-3 col-6 mb-1 mt-5 ">
                 <div class="p-2 d-flex align-items-center justify-content-center border w-100 div-promo">
-                    <img class="img-fluid" data-aos="zoom-in-right" src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" alt="<?php echo get_post_meta( $product->get_image_id() , '_wp_attachment_image_alt', TRUE); ?>" />
+                    <img class="img-fluid" src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" alt="<?php echo get_post_meta( $product->get_image_id() , '_wp_attachment_image_alt', TRUE); ?>" />
                     <?php if ($product->is_on_sale()): 
                             ?>
-                            <img class="img-fluid img-promo" data-aos="zoom-in-up" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/icon_promo.webp" alt="" />
+                            <img class="img-fluid img-promo" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/icon_promo.webp" alt="" />
                         <?php endif; ?>
                     
                 </div>
@@ -261,7 +261,7 @@ get_header(); ?>
                 
                 <div class="row mb-3 pl-4 w-100">
                     <div class="col-lg-6 col-md-12 col-12 col-xs-12">
-                        <div class="row mb-0" data-aos="fade-up" >
+                        <div class="row mb-0" >
                             <p><?php echo get_sub_field('systeme_impression')['description_1']; ?></p>
                         </div>
                         <div class="row mb-3">
@@ -270,14 +270,14 @@ get_header(); ?>
                                     <thead>
                                         <tr>
                                             <?php foreach(get_sub_field('systeme_impression')['texte_repetiteur'] as $systeme_impression_repeteur): ?>
-                                                <th scope="col" data-aos="fade-down"  class="systeme_impression_repeteur_titre text-center"><?php echo $systeme_impression_repeteur['titre']; ?></th>
+                                                <th scope="col" class="systeme_impression_repeteur_titre text-center"><?php echo $systeme_impression_repeteur['titre']; ?></th>
                                             <?php endforeach; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <?php foreach(get_sub_field('systeme_impression')['texte_repetiteur'] as $systeme_impression_repeteur): ?>
-                                            <td class="systeme_impression_text" data-aos="fade-down" > 
+                                            <td class="systeme_impression_text" > 
                                                 > <?php echo $systeme_impression_repeteur['description']; ?>
                                             </td>
                                             <?php endforeach; ?>
@@ -291,12 +291,12 @@ get_header(); ?>
                                 </table>
                               </div>
                         </div>
-                        <div class="row" data-aos="fade-up">
+                        <div class="row" >
                             <?php echo get_sub_field('systeme_impression')['description_2']; ?>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-12 col-xs-12 d-flex align-items-center justify-content-center" >
-                        <img class="img-fluid w-100" data-aos="fade-up" src="<?php echo get_sub_field('systeme_impression')['image_toshiba']['url']; ?>" alt="<?php echo get_sub_field('systeme_impression')['image_toshiba']['alt']; ?>">
+                        <img class="img-fluid w-100" src="<?php echo get_sub_field('systeme_impression')['image_toshiba']['url']; ?>" alt="<?php echo get_sub_field('systeme_impression')['image_toshiba']['alt']; ?>">
                     </div>
                 </div>
                 <div class="site_toshiba d-flex justify-content-center pb-2 pt-2 ">
