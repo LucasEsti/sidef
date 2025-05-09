@@ -249,7 +249,7 @@
 		}
             });
             $('.owl-carousel').owlCarousel({
-		loop: $('.owl-prod img').lenght > 1 ? false : true,
+		//loop: $('.owl-prod img').lenght > 1 ? false : true,
 		margin: 0,
 		nav: false,
                 dots: false,
