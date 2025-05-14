@@ -46,6 +46,10 @@ li {
     border: 14px solid #ffffff !important;
 }
 
+.devis + .product_type_simple {
+  display: none;
+}
+
 .systeme_impression_text {
     font-size: 14px; 
     padding-bottom: 0;
