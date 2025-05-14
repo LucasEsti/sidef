@@ -42,6 +42,9 @@
             color: #262626 !important;
             opacity: 1 !important;
           }
+          .devis + .product_type_simple {
+  display: none;
+}
     </style>
 </head>
 
