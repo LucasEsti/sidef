@@ -302,7 +302,7 @@ ol.flex-control-nav {
 
 .product .woocommerce-Price-amount bdi {
     font-weight: 700;
-    font-size: 27px;
+    font-size: 14px;
     color: #4a4a4a;
 }
 .product .price {
@@ -347,9 +347,10 @@ ol.flex-control-nav {
     color: #8d1b65;
 }
 
+/*
 .price del {
     display: none;
-}
+}*/
 
 .price ins {
     text-decoration: none;
@@ -424,6 +425,10 @@ ol.flex-control-nav {
 
 .single-product form.cart .quantity {
 margin-top: .5em;
+}
+
+.single-product .summary entry-summary .price {
+    display: none
 }
 
 .img-head {
