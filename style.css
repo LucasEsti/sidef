@@ -427,7 +427,7 @@ ol.flex-control-nav {
 margin-top: .5em;
 }
 
-.single-product .entry-summary .price {
+.single-product .entry-summary p.price {
     display: none
 }
 
