@@ -80,6 +80,28 @@ get_header(); ?>
     </div>
     <?php endif; ?>
 
+    <!-- Modal image_popup-->
+<?php if( get_field('image_popup', 'option') ): ?>
+                     
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="<?php the_field('image_popup', 'option'); ?>" class="img-fluid"/>
+      </div>
+      <div class="modal-footer">
+          
+      </div>
+    </div>
+  </div>
+</div>
+                        <?php endif; ?>
+
     <div class="container mt-3 mb-3">
         <div class="row">
             <img class="img-fluid" src="<?php echo get_field('animation_livraison', 'option')['url']; ?>">
