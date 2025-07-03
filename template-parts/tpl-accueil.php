@@ -87,7 +87,7 @@ get_header(); ?>
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button btn btn-outline-danger" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close  btn btn-outline-danger" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
