@@ -45,6 +45,9 @@
           .devis + .product_type_simple {
   display: none;
 }
+.modal-content .close {
+            color: #e51f49;
+        }
     </style>
 </head>
 
