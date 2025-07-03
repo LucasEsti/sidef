@@ -82,12 +82,12 @@ get_header(); ?>
 
     <!-- Modal image_popup-->
 <?php if( get_field('image_popup', 'option') ): ?>
-                     
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close  btn btn-outline-danger" data-dismiss="modal" aria-label="Close">
+        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -95,7 +95,7 @@ get_header(); ?>
         <img src="<?php the_field('image_popup', 'option'); ?>" class="img-fluid"/>
       </div>
       <div class="modal-footer">
-          
+        
       </div>
     </div>
   </div>
