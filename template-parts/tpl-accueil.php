@@ -87,7 +87,7 @@ get_header(); ?>
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -95,7 +95,6 @@ get_header(); ?>
         <img src="<?php the_field('image_popup', 'option'); ?>" class="img-fluid"/>
       </div>
       <div class="modal-footer">
-        
       </div>
     </div>
   </div>

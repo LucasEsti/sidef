@@ -89,6 +89,9 @@
             var logo = $('#logoSidef');
             var logo_footer = $('#logoSidef_foot');
             $('#exampleModalCenter').modal('show');
+            $('.close-modal').on('click', function () {
+                $('#exampleModalCenter').modal('hide');
+            });
             
             logo.hover(
                 function() {
