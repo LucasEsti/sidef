@@ -87,7 +87,7 @@ get_header(); ?>
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-        <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close btn btn-outline-danger" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
